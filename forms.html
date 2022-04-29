@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples of forms</title>
+    </head>
+    <body>
+        <h1>text forms</h1>
+        <form action="https://www.server5.banana.com/login.php" method="get">
+            <p>yahallo,username:
+                <input type="text" name="username" maxlength="15">
+               
+            </p>
+
+            <p> makaka password:
+                <input type="password" name="password" maxlength="15">
+
+            </p>
+        </form>
+        <form action="https://www.server4.banana.com/comment.php" method="get">
+            <p>what is your thought on our website.
+            </p>
+            <textarea name="comments"  cols="30" rows="10"></textarea>
+            
+        </form>
+        <form action="https://www.serverjp.banana.com/choice.php" method="get">
+            <h2>Radio button</h2>
+            <p>
+                please select your favourite fruit.
+            </p>
+            
+            <input type="radio" name="genre" value="apple" checked="checked">
+            Apple
+            <input type="radio" name="genre" value="banana">
+            Banana
+            <input type="radio" name="genre" value="mango">
+            Mango
+
+            <br />
+            <h2>checkbox</h2>
+            <p>please select your favourite game .Check all that apply</p>
+           
+            <input type="checkbox" name="games" value="pubg">
+            PUBG
+            <input type="checkbox" name="games" value="minecraft">
+            MINECRAFT
+            <input type="checkbox" name="games" value="summertime saga">
+            Summertime Saga
+            <br />
+            <h2>Drop down menu or select box</h2>
+            <p>where are you from:</p>
+            <select name="countries" id="">
+                <option value="africa">Africa</option>
+                <option value="antertica">Antertica</option>
+                <option value="asia" selected="selected">Asia</option>
+                <option value="australia">Australia</option>
+                <option value="europe">Europe</option>
+                <option value="namerica">NorthAmerica</option>
+                <option value="samerica">SourthAmerica</option>  
+            </select>
+            <br />
+            <h2>Multiple select box</h2>
+            <p>Do you play any of these instruments </p>
+            <p><em>You can select multiple options by holing down ctrl key on windows and linux, command key on mac while selecting other option</em></p>
+            <select name="instrument" size="10" id="" multiple="multiple">
+                <option value="mouth" selected="selected">your mouth</option>
+                <option value="hand">your hand</option>
+                <option value="bass">Bass</option>
+                <option value="tropicalbass">Tropical Bass</option>
+                <option value="basedOnBass">Based on bass</option>
+                <option value="not bass">not bass</option>
+            </select>
+            
+        </form>
+        <form action="http://www.usmedia.banana.com/upload.php" method="post">
+            <p>upload a media file</p>
+            <input type="file" name="user-media"><br /><br />
+            <input type="submit" value="Upload"><br />
+        </form>
+        <form action="https://www.mailserver.banana.com/subscribe.php">
+            <p>Subscribe to weekly mail list.</p>
+            <input type="text" name="email" >
+            <!--<input type="submit" value="subscribe" >-->
+            <p><input type="image" src="images/subscribeBlue.png" alt="subscribe button" height="30%" width="10%"></p>
+        </form>
+        <form action="https://www.banana.com/add.php">
+            <button>
+                <img src="images/plus.png" alt="add" height="10" width="10">Add
+            </button>
+        </form>
+        <form action="https://www.bikapu.com/booking.php">
+            <label>Departure Date:</label>
+            <input type="date" name="depart">
+            <input type="submit" value="book">
+        </form>
+        <form action="https://www.wikipedia.com">
+            <p>Search:</p>
+            <input type="search" name="search" placeholder="enter an anime">
+            <input type="submit" value="search">
+
+        </form>
+        <p>
+            Surveys are a good way to practice html forms.
+        </p><a href="./surveyForm.html">This is linked to a survey form.</a>
+        
+    </body>
+</html>
